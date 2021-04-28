@@ -381,3 +381,18 @@ app {
         width: 100%; /* Could be more or less, depending on screen size */
     }
 }
+
+.header-font {
+    font-family: muli, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 100px;
+}
+
+.p-font {
+    font-family: muli, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
