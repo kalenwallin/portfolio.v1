@@ -20,6 +20,9 @@ jobs:
        # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish BlazorApp2.csproj -c Release -o release --nologo
+     # changes the base-tag in index.html from '/' to 'BlazorGitHubPagesDemo' to match GitHub Pages repository subdirectory
+    - name: Change base-tag in index.html from / to personalportfolio
+      run: sed -i 's/<base href="\/" \/>/<base href="\/personalportfolio\/" \/>/g' release/wwwroot/index.html
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
