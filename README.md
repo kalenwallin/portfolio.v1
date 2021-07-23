@@ -5,7 +5,7 @@ I created this website using Blazor WebAssembly which is a part the .NET Framewo
 
 I am hosting this website using GitHub Pages.
 
-# v1.1 Changes:
+## v1.1 Changes:
 -Added Dark mode
 -Animated elements on page load
 -Added recent work experience and development projects
