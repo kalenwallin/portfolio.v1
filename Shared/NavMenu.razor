@@ -1,4 +1,5 @@
 ﻿@inject IJSRuntime js
+@inject Services.AppData AppData;
 
 <div class="top-row pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">Kalen Wallin</a>
@@ -79,11 +80,13 @@
 
     protected override async Task OnInitializedAsync()
     {
+        AppData.SetTheme("Light");
         var themeFromLocalStorage = await js.InvokeAsync<string>("readLocalStorage", "theme");
         if (!string.IsNullOrEmpty(themeFromLocalStorage))
         {
             selectedTheme = themeFromLocalStorage;
             theme_check = themeFromLocalStorage;
+            AppData.SetTheme(themeFromLocalStorage);
 
         }
         await js.InvokeVoidAsync("MyInterop.ChangeTheme", selectedTheme);
@@ -94,10 +97,12 @@
         if (selectedTheme == "Light")
         {
             selectedTheme = "Dark";
+            AppData.SetTheme(selectedTheme);
         }
         else if (selectedTheme == "Dark")
         {
             selectedTheme = "Light";
+            AppData.SetTheme(selectedTheme);
         }
         await js.InvokeVoidAsync("addToLocalStorage", "theme", selectedTheme);
         await js.InvokeVoidAsync("MyInterop.ChangeTheme", selectedTheme);

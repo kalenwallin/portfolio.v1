@@ -5,70 +5,80 @@
 <Link Rel="icon" Href="/Images/alpha-k-circle-outline.png" />
 
 <header>
-    <div class="modal-header">
+    <div class="modal-header slide-in-from-bottom">
         <h1>Work Experience</h1>
     </div>
 
 </header>
 <body>
-    <div class="modal-header">
-        <h2>2021</h2>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="card" onclick="document.getElementById('id01').style.display='block'">
-                <img src="/Images/FarmAField.svg" alt="FarmAfield Logo" style="width:100%">
-                <div class="container">
-                    <h4><b>FarmAfield</b></h4>
-                    <p>Software Developer Intern</p>
+    <div>
+        <div class="modal-header slide-in-from-bottom">
+            <h2>2021</h2>
+        </div>
+        <div class="row slide-in-from-bottom-light">
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id01').style.display='block'" style="height: 435px;">
+                    <div class="img-container">
+                        <img src="/Images/faf-logo-no-words.png" alt="FarmAfield Logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>FarmAfield</b></h4>
+                        <p>Software Developer Intern</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="card" onclick="document.getElementById('id03').style.display='block'">
-                <img src="/Images/WallinFarmsSmall.png" alt="Wallin Farms Logo" style="width:100%">
-                <div class="container">
-                    <h4><b>Wallin Farms</b></h4>
-                    <p>Farmhand & Office Worker</p>
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id03').style.display='block'" style="height: 410px;">
+                    <div class="img-container">
+                        <img src="/Images/WallinFarmsSmall.png" alt="Wallin Farms Logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>Wallin Farms</b></h4>
+                        <p>Farmhand & Office Worker</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="column">
-        </div>
-    </div>
-    <div class="modal-header">
-        <h2>2020</h2>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="card" onclick="document.getElementById('id02').style.display='block'">
-                <img src="/Images/initunlwhite.png" alt="Initialize UNL Logo White" style="width:100%">
-                <div class="container">
-                    <h4><b>Initialize Curriculum Development Team</b></h4>
-                    <p>Curriculum Developer</p>
-                </div>
+            <div class="column">
             </div>
         </div>
-        <div class="column">
+        <div class="modal-header slide-in-from-bottom">
+            <h2>2020</h2>
         </div>
-    </div>
-    <div class="modal-header">
-        <h2 style="color: grey">2019</h2>
-    </div>
-    <div class="row">
-        <div class="column">
-            <div class="card" onclick="document.getElementById('id04').style.display='block'">
-                <img src="/Images/ImperialPoolLogo.png" alt="Imperial Pool Logo" style="width:100%">
-                <div class="container">
-                    <h4><b>Imperial Pool</b></h4>
-                    <p>Lifeguard</p>
+        <div class="row slide-in-from-bottom-light">
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id02').style.display='block'" style="height: 395px;">
+                    <div class="img-container">
+                        <img src="/Images/initunlwhite.png" alt="Initialize UNL Logo White">
+                    </div>
+                    <div class="container">
+                        <h4><b>Initialize</b></h4>
+                        <p>Curriculum Developer</p>
+                    </div>
                 </div>
             </div>
+            <div class="column to-slide-bottom-light animate">
+            </div>
         </div>
-        <div class="column">
+        <div class="modal-header slide-in-from-bottom">
+            <h2 style="color: grey">2019</h2>
         </div>
+        <div class="row slide-in-from-bottom-light">
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id04').style.display='block'" style="height: 440px;">
+                    <div class="img-container">
+                        <img src="/Images/ImperialPoolLogo.png" alt="Imperial Pool Logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>Imperial Pool</b></h4>
+                        <p>Lifeguard</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column to-slide-bottom-light animate">
+            </div>
+        </div>
+        <br />
     </div>
-    <br />
 </body>
 
 <!-- The Modal -->
@@ -81,13 +91,40 @@
         <div class="fappy_container">
             <h1 class="text-center">FarmAField <br />Software Developer Internship</h1>
             <div class="text-center">
-                <img src="/Images/farmafield.png" alt="FarmAfield Logo" style="width:25%">
+                <img src="/Images/faf-logo-new.png" alt="FarmAfield Logo" style="width:25%">
             </div>
             <h2>Description:</h2>
             <p>
                 <i>May 2021 - Present</i>
-                <br /> <br />
-                More info coming soon!
+                <br /><br />
+                I worked with a team of 4 software engineers to maintain and add features to the FarmAfield website.
+                <br />
+                <br />
+                <b>Notable Features:</b>
+                <br />
+                <br />
+                <i>Dark Mode</i><br />
+                Users can toggle between light and dark theme in their account settings.
+                If a user's device/browser has a theme preference, then the website's theme is automatically set. Users can override
+                this setting by toggle the theme in their account setting.
+                <br />
+                <br />
+                <i>Email Preferences</i><br />
+                Users can add a second email and manage their marketing email preferences in their account settings.
+                Users can turn marketing emails on or off for each email. The preference is sent to the server using an AJAX POST request
+                to avoid page refresh for best user experience.
+                <br />
+                <br />
+                <i>Solar Landing Page</i><br />
+                FarmAfield now offers farmers the opportunity to set up solar panels on their land with funding from investors.
+                I created the landing page and the My Solar Assessment form for our Solar subdomain site.
+                <br />
+                <br />
+                <b>Development Methodology:</b> Agile, Test-driven development<br />
+                <b>Development Tools:</b> Django, Foundation, GitHub, PostgreSQL, Redis Server, Yarn, Webpack, Poetry, Digital Ocean, Caprover <br />
+                <b>Languages:</b> Python, HTML, CSS, JavaScript<br />
+                <b>Testing:</b> Seleneium, Unit, Integration<br />
+                <b>Workflow Management:</b> Jira<br />
             </p>
             <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
         </div>

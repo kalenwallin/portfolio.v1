@@ -3,7 +3,7 @@
 
 /*dark-theme start*/
 body.dark-theme .sidebar dark {
-    background-image: linear-gradient(#000000, #000000, #000000);
+    background: #121212;
     transition: ease .3s;
 }
 
@@ -19,7 +19,6 @@ body.dark-theme .sidebar .nav-item a {
 
 body.dark-theme .modal-header {
     border-bottom: 1px solid #646464;
-    transition: ease .3s;
 }
 
 body.dark-theme {
@@ -30,18 +29,15 @@ body.dark-theme {
 
 body.dark-theme .card {
     background-color: #121212;
-    transition: ease .3s;
 }
 
-body.dark-theme .modal-content {
+body.dark-theme .modal-content, body.dark-theme .modal-pfa-content, body.dark-theme .modal-doc-content {
     background-color: #1e1e1e;
     border: 1px solid #000;
-    transition: ease .3s;
 }
 
 body.dark-theme h2 {
     color: #c3c3c3;
-    transition: ease .3s;
 }
 
 body.dark-theme a, body.dark-theme .btn-link {
@@ -54,12 +50,31 @@ body.dark-theme .sidebar {
     transition: ease .3s;
 }
 
-body.no-theme-toggle .game_widget_page .first_page, body.no-theme-toggle .game_widget_page .second_page {
-    background-color: #121212 !important;
+body.dark-theme .btn-block {
+    display: block;
+    width: 100%;
+    color: #c3c3c3;
+    background: #454545;
+    border: 1px solid #000;
+    -webkit-appearance: none;
 }
 
-body.no-theme-toggle .game_widget_page, body.dark-theme .game_widget_page * {
-    border-color: #121212 !important;
+body.dark-theme .btn-block:hover {
+    display: block;
+    width: 100%;
+    color: #939393;
+    background: #313131;
+    border: 1px solid #000;
+    -webkit-appearance: none;
+}
+
+body.dark-theme .btn-block:focus {
+    border: 1px solid #000;
+    -webkit-appearance: none;
+}
+
+body.dark-theme button:focus {
+    outline: none;
 }
 /*dark-theme end*/
 
@@ -68,9 +83,40 @@ html, body {
     transition: ease .3s;
 }
 
+.btn-block {
+    display: block;
+    width: 100%;
+    color: #121212;
+    background: #d5d5d5;
+    border: 1px solid #d5d5d5;
+    -webkit-appearance: none;
+}
+
+    .btn-block:hover {
+        display: block;
+        width: 100%;
+        color: #000;
+        background: #bebebe;
+        border: 1px solid #bebebe;
+        -webkit-appearance: none;
+    }
+
+    .btn-block:focus {
+        border: 1px solid #bebebe;
+        -webkit-appearance: none;
+    }
+
+    button:focus {
+        outline: none;
+    }
+
 h2 {
     color: grey;
     transition: ease .3s;
+}
+
+.modal-content h2 {
+    color: #000;
 }
 
 a, .btn-link {
@@ -121,11 +167,13 @@ app {
 .og-sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
     transition: ease .3s;
+    transition: ease .3s;
 }
 
 
 .sidebar {
     background-image: linear-gradient(#355C7D, #6C5B7B, #C06C84);
+    transition: ease .3s;
     transition: ease .3s;
 }
 
@@ -165,6 +213,7 @@ app {
             display: flex;
             align-items: center;
             line-height: 3rem;
+            transition: ease .3s;
             transition: ease .3s;
         }
 
@@ -274,7 +323,7 @@ app {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 100%;
+    width: 350px;
     height: 100%;
     transition: ease .3s;
 }
@@ -283,27 +332,35 @@ app {
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     cursor: pointer;
-    transition: ease .3s;
 }
 
 .card-left-about {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width: 90%;
+    width: 100%;
     height: 100%;
-    transition: ease .3s;
 }
 
     /* On mouse-over, add a deeper shadow */
     .card-left-about:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-        transition: ease .3s;
     }
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* Add some padding inside the card container */
 .container {
     padding: 16px 16px;
+    width: 100%;
+    height: 100%;
+}
+
+.img-container {
+    padding: 1px 1px;
     width: 100%;
     height: 100%;
 }
@@ -412,7 +469,6 @@ app {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    transition: ease .3s;
 }
 
     .close:hover,
@@ -420,7 +476,6 @@ app {
         color: black;
         text-decoration: none;
         cursor: pointer;
-        transition: ease .3s;
     }
 
 .fappy_container {
@@ -556,4 +611,83 @@ app {
     -o-transition: ease .3s;
 }
 
+/* Animation */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-20%);
+        opacity: 0;
+    }
 
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(20%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottomLight {
+    0% {
+        transform: translateY(5%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottomVideoGames {
+    0% {
+        transform: translateY(3%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-from-left {
+    animation: 750ms ease 0s 1 slideInFromLeft;
+}
+
+.slide-in-from-right {
+    animation: 750ms ease 0s 1 slideInFromRight;
+}
+
+.slide-in-from-bottom {
+    animation: 750ms ease 0s 1 slideInFromBottom;
+}
+
+.slide-in-from-bottom-light {
+    animation: 750ms ease 0s 1 slideInFromBottomLight;
+}
+
+.already-visible {
+    animation: none;
+}
