@@ -1,18 +1,88 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+/*dark-theme start*/
+body.dark-theme .sidebar dark {
+    background-image: linear-gradient(#000000, #000000, #000000);
+    transition: ease .3s;
+}
+
+body.dark-theme .navbar-dark .navbar-brand {
+    color: #959595;
+    transition: ease .3s;
+}
+
+body.dark-theme .sidebar .nav-item a {
+    color: #8f8f8f;
+    transition: ease .3s;
+}
+
+body.dark-theme .modal-header {
+    border-bottom: 1px solid #646464;
+    transition: ease .3s;
+}
+
+body.dark-theme {
+    color: #c3c3c3;
+    background-color: #282828;
+    transition: ease .3s;
+}
+
+body.dark-theme .card {
+    background-color: #121212;
+    transition: ease .3s;
+}
+
+body.dark-theme .modal-content {
+    background-color: #1e1e1e;
+    border: 1px solid #000;
+    transition: ease .3s;
+}
+
+body.dark-theme h2 {
+    color: #c3c3c3;
+    transition: ease .3s;
+}
+
+body.dark-theme a, body.dark-theme .btn-link {
+    color: #5297ff;
+    transition: ease .3s;
+}
+
+body.dark-theme .sidebar {
+    background: #121212;
+    transition: ease .3s;
+}
+
+body.no-theme-toggle .game_widget_page .first_page, body.no-theme-toggle .game_widget_page .second_page {
+    background-color: #121212 !important;
+}
+
+body.no-theme-toggle .game_widget_page, body.dark-theme .game_widget_page * {
+    border-color: #121212 !important;
+}
+/*dark-theme end*/
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    transition: ease .3s;
+}
+
+h2 {
+    color: grey;
+    transition: ease .3s;
 }
 
 a, .btn-link {
-    color: #0366d6;
+    color: #0062d1;
+    transition: ease .3s;
 }
 
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
     border-color: #1861ac;
+    transition: ease .3s;
 }
 
 app {
@@ -35,6 +105,7 @@ app {
         background-color: #f7f7f7;
         border-bottom: 1px solid #d6d5d5;
         justify-content: flex-end;
+        transition: ease .3s;
     }
 
         .main .top-row > a, .main .top-row .btn-link {
@@ -49,15 +120,18 @@ app {
 
 .og-sidebar {
     background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+    transition: ease .3s;
 }
 
 
 .sidebar {
     background-image: linear-gradient(#355C7D, #6C5B7B, #C06C84);
+    transition: ease .3s;
 }
 
     .sidebar .top-row {
         background-color: rgba(0,0,0,0.4);
+        transition: ease .3s;
     }
 
     .sidebar .navbar-brand {
@@ -91,16 +165,19 @@ app {
             display: flex;
             align-items: center;
             line-height: 3rem;
+            transition: ease .3s;
         }
 
             .sidebar .nav-item a.active {
                 background-color: rgba(255,255,255,0.25);
                 color: white;
+                transition: ease .3s;
             }
 
             .sidebar .nav-item a:hover {
                 background-color: rgba(255,255,255,0.1);
                 color: white;
+                transition: ease .3s;
             }
 
 .content {
@@ -109,18 +186,22 @@ app {
 
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.1);
+    transition: ease .3s;
 }
 
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
+    transition: ease .3s;
 }
 
 .invalid {
     outline: 1px solid red;
+    transition: ease .3s;
 }
 
 .validation-message {
     color: red;
+    transition: ease .3s;
 }
 
 #blazor-error-ui {
@@ -133,6 +214,7 @@ app {
     position: fixed;
     width: 100%;
     z-index: 1000;
+    transition: ease .3s;
 }
 
 #blazor-error-ui .dismiss {
@@ -192,14 +274,16 @@ app {
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
+    transition: ease .3s;
 }
 
     /* On mouse-over, add a deeper shadow */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
     cursor: pointer;
+    transition: ease .3s;
 }
 
 .card-left-about {
@@ -208,11 +292,13 @@ app {
     transition: 0.3s;
     width: 90%;
     height: 100%;
+    transition: ease .3s;
 }
 
     /* On mouse-over, add a deeper shadow */
     .card-left-about:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transition: ease .3s;
     }
 
 /* Add some padding inside the card container */
@@ -289,6 +375,7 @@ app {
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: ease .3s;
 }
 
 /* Modal Content/Box */
@@ -298,6 +385,7 @@ app {
     padding: 20px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
+    transition: ease .3s;
 }
 
 .modal-pfa-content {
@@ -306,6 +394,7 @@ app {
     padding: 20px;
     border: 1px solid #888;
     width: 50%; /* Could be more or less, depending on screen size */
+    transition: ease .3s;
 }
 
 .modal-doc-content {
@@ -314,6 +403,7 @@ app {
     padding: 20px;
     border: 1px solid #888;
     width: 55%; /* Could be more or less, depending on screen size */
+    transition: ease .3s;
 }
 
 /* The Close Button */
@@ -322,6 +412,7 @@ app {
     float: right;
     font-size: 28px;
     font-weight: bold;
+    transition: ease .3s;
 }
 
     .close:hover,
@@ -329,6 +420,7 @@ app {
         color: black;
         text-decoration: none;
         cursor: pointer;
+        transition: ease .3s;
     }
 
 .fappy_container {
@@ -367,6 +459,7 @@ app {
         padding: 20px;
         border: 1px solid #888;
         width: 100%; /* Could be more or less, depending on screen size */
+        transition: ease .3s;
     }
     .modal-pfa-content {
         background-color: #fefefe;
@@ -374,6 +467,7 @@ app {
         padding: 20px;
         border: 1px solid #888;
         width: 100%; /* Could be more or less, depending on screen size */
+        transition: ease .3s;
     }
     .modal-doc-content {
         background-color: #fefefe;
@@ -381,6 +475,7 @@ app {
         padding: 20px;
         border: 1px solid #888;
         width: 100%; /* Could be more or less, depending on screen size */
+        transition: ease .3s;
     }
 }
 
