@@ -1,5 +1,4 @@
 ﻿@inject IJSRuntime js
-@inject Services.AppData AppData
 
 <div class="top-row pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">Kalen Wallin</a>
@@ -75,7 +74,6 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
-    AppData.Theme = "Light";
     public string selectedTheme = "Light";
     public string theme_check = "Light";
 
