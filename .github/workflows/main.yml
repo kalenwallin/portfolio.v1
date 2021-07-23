@@ -16,7 +16,7 @@ jobs:
     - name: Setup .NET Core SDK
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.200
+        dotnet-version: 3.1
        # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
       run: dotnet publish BlazorApp2.csproj -c Release -o release --nologo
