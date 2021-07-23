@@ -1,0 +1,122 @@
+﻿@page "/videogames"
+
+<Title>Kalen Wallin's Portfolio</Title>
+<Meta content="Software developer, Kalen Wallin, shares his projects and experiences." />
+<Link Rel="icon" Href="/Images/alpha-k-circle-outline.png" />
+
+<header>
+    <div class="modal-header">
+        <h1>Video Games</h1>
+    </div>
+
+</header>
+<body>
+    <div class="modal-header">
+        <h2 style="color: grey">2021</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card" onclick="document.getElementById('id02').style.display='block'">
+                <img src="/Images/minieval.png" alt="Minieval Logo" style="width:100%">
+                <div class="container">
+                    <h4><b>Minieval</b></h4>
+                    <p>User Interface and Programming</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+        </div>
+        <div class="column">
+        </div>
+    </div>
+    <div class="modal-header">
+        <h2 style="color: grey">2018</h2>
+    </div>
+    <div class="row">
+        <div class="column">
+            <div class="card" onclick="document.getElementById('id01').style.display='block'">
+                <img src="/Images/fappyBorbs.png" alt="Fappy Borbs Main Screen" style="width:100%">
+                <div class="container">
+                    <h4><b>Fappy Borbs</b></h4>
+                    <p>Project Manager & Lead Programmer</p>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+        </div>
+        <div class="column">
+        </div>
+    </div>
+    <br />
+</body>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+        <div class="fappy_container">
+            <h1 class="text-center">Fappy Borbs</h1>
+            <div class="text-center">
+                <iframe src="https://itch.io/embed/380758" height="175" width="300" frameborder="0">
+                    <a href="https://kalenwallin.itch.io/fappy-borbs">Fappy Borbs by kalenwallin</a>
+                </iframe>
+            </div>
+            <h2>Description:</h2>
+            <p>
+                Fappy Borbs is an adventure take on the popular game, Flappy Bird. This game was created by my computer science class in highschool.
+                Our team consisted of 2 programmers, 2 artists, and a music producer.
+                <br /><br />
+                <b>Programmers:</b> Kalen Wallin & Travis Rowley <br />
+                <b>Artists:</b> Landis Beverly & Nike Smith <br />
+                <b>Music Producer:</b> Will Kuenne <br /><br />
+                <b>Development Tools:</b> Unity Game Engine <br />
+                <b>Language:</b> C#
+            </p>
+            <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+        </div>
+    </form>
+</div>
+
+<!-- The Modal -->
+<div id="id02" class="modal">
+    <span onclick="document.getElementById('id02').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+        <div class="fappy_container">
+            <h1 class="text-center">Minieval</h1>
+            <div class="text-center">
+                <iframe src="https://itch.io/embed/1003723" height="175" width="300" frameborder="0">
+                    <a href="https://maugrift.itch.io/minieval">Minieval by Maugrift, kalenwallin, MagosJurisVulpes, evanmielak, Lotus</a>
+                </iframe>
+            </div>
+            <h2>Description:</h2>
+            <p>
+                A tiny medieval city builder, inspired by Islanders. <br /><br />
+                This game was created by my Game Development club at the University of Nebraska-Lincoln.
+                Our team consisted of 4 programmers, 1 artist, and 1 music programmer. 
+                <br /><br />
+                <b>Programmers:</b> Kalen Wallin, Evan Mielak, Aaron Friesen, and Viet Ninh<br />
+                <b>Artist:</b> Ethan Fox <br />
+                <b>Music Producer:</b> Jackson Herman and Aaron Friesen <br /><br />
+                <b>Development Tools:</b> Godot Game Engine <br />
+                <b>Language:</b> GDScript  <br /><br />
+                <a href="https://github.com/Maugrift/Minieval" target="_blank">Check out the code!</a>
+            </p>
+            <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+<!--
+  <iframe src="https://itch.io/embed/380758" height="167" width="552" frameborder="0">
+    <a href="https://kalenwallin.itch.io/fappy-borbs">Fappy Borbs by kalenwallin</a>
+</iframe>
+-->

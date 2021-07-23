@@ -1,0 +1,29 @@
+﻿.sidebar dark dark-theme {
+    background-image: linear-gradient(#000000, #000000, #000000);
+}
+
+.navbar-dark .navbar-brand dark-theme {
+    color: #959595;
+}
+
+.sidebar .nav-item a dark-theme {
+    color: #8f8f8f;
+}
+
+.modal-header dark-theme {
+    border-bottom: 1px solid #646464;
+}
+
+body dark-theme {
+    color: #b6b6b6;
+    background-color: #121212;
+}
+
+.card dark-theme {
+    background-color: #2a2a2a;
+}
+
+.modal-content dark-theme {
+    background-color: #1e1e1e;
+    border: 1px solid #000;
+}

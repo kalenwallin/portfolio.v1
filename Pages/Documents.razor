@@ -1,0 +1,101 @@
+﻿@page "/documents"
+
+    <Title>Kalen Wallin's Portfolio</Title>
+    <Meta content="Software developer, Kalen Wallin, shares his projects and experiences." />
+    <Link Rel="icon" Href="/Images/alpha-k-circle-outline.png" />
+
+    <header>
+        <div class="modal-header">
+            <h1>Documents</h1>
+        </div>
+
+    </header>
+    <body>
+        <div class="row">
+            <div class="column">
+                <div class="card" onclick="document.getElementById('id01').style.display='block'">
+                    <img src="/Images/Resume.png" alt="Resume Graphic" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="document.getElementById('id02').style.display='block'">
+                    <img src="/Images/unltranscript.png" alt="UNL Transcript Graphic" style="width:100%">
+                </div>
+            </div>
+            <div class="column">
+                <div class="card" onclick="document.getElementById('id03').style.display='block'">
+                    <img src="/Images/ccstranscript.png" alt="CCS Transcript Graphic" style="width:100%">
+                </div>
+            </div>
+        </div>
+        <br />
+    </body>
+
+    <!-- The Modal -->
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-doc-content animate">
+            <div class="modal-doc-container-desktop">
+                <h1 class="text-center">Resume</h1>
+                <iframe src="/Documents/Resume.pdf" width="800" height="600"></iframe>
+                <p>Having issues with the pdf? Try the link below.</p>
+                <a href="/Documents/Resume.pdf" download="Kalen Wallin Resume" target="_blank">Download PDF</a>
+                <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+            </div>
+            <div class="modal-doc-container-mobile">
+                <h1>Resume</h1>
+                <p>PDF display is not supported on mobile. Please download to view my resume or visit on desktop.</p>
+                <a href="/Documents/Resume.pdf" download="Kalen Wallin Resume">Download PDF</a>
+                <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- The Modal 2 -->
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-doc-content animate">
+            <div class="modal-doc-container-desktop">
+                <h1 class="text-center">UNL Transcript</h1>
+                <iframe src="/Documents/UNLTranscript.pdf" width="800" height="600"></iframe>
+                <p>Having issues with the pdf? Try the link below.</p>
+                <a href="/Documents/UNLTranscript.pdf" download="Kalen Wallin UNL Transcript" target="_blank">Download PDF</a>
+                <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
+            </div>
+            <div class="modal-doc-container-mobile">
+                <h1>UNL Transcript</h1>
+                <p>PDF display is not supported on mobile. Please download to view my transcript or visit on desktop.</p>
+                <a href="/Documents/UNLFall2020Transcript.pdf" download="Kalen Wallin UNL Transcript">Download the pdf</a>
+                <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- The Modal 3 -->
+    <div id="id03" class="modal">
+        <span onclick="document.getElementById('id03').style.display='none'"
+              class="close" title="Close Modal">&times;</span>
+
+        <!-- Modal Content -->
+        <form class="modal-doc-content animate">
+            <div class="modal-doc-container-desktop">
+                <h1 class="text-center">CCS Transcript</h1>
+                <iframe src="/Documents/cchstranscript.pdf" width="800" height="600"></iframe>
+                <p>Having issues with the pdf? Try the link below.</p>
+                <a href="/Documents/cchstranscript.pdf" download="Kalen Wallin CCHS Transcript" target="_blank">Download PDF</a>
+                <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
+            </div>
+            <div class="modal-doc-container-mobile">
+                <h1>CCS Transcript</h1>
+                <p>PDF display is not supported on mobile. Please download to view my transcript or visit on desktop.</p>
+                <a href="/Documents/cchstranscript.pdf" download="Kalen Wallin CCHS Transcript">Download the pdf</a>
+                <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
+            </div>
+        </form>
+    </div>
