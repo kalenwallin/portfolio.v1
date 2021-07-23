@@ -24,5 +24,10 @@ namespace BlazorApp2
 
             await builder.Build().RunAsync();
         }
+
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddSingleton<Services.AppData>();
+        }
     }
 }

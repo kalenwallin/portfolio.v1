@@ -1,4 +1,7 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
+﻿@inject IJSRuntime js
+@inject Services.AppData AppData
+
+<div class="top-row pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">Kalen Wallin</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
@@ -50,7 +53,14 @@
         <li class="nav-item px-3">
             <NavLink class="nav-link">
                 <span class="oi oi-moon" aria-hidden="true"></span>
-                <input type="checkbox" name="checkbox" id="dark-theme-toggle-button" class="dark-theme-toggle">
+                @if (theme_check == "Light")
+                {
+                    <input @onchange="@ChangingTheme" type="checkbox" name="checkbox" id="dark-theme-toggle-button" class="dark-theme-toggle">
+                }
+                else
+                {
+                    <input @onchange="@ChangingTheme" checked type="checkbox" name="checkbox" id="dark-theme-toggle-button" class="dark-theme-toggle">
+                }
             </NavLink>
         </li>
     </ul>
@@ -64,5 +74,34 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+    AppData.Theme = "Light";
+    public string selectedTheme = "Light";
+    public string theme_check = "Light";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var themeFromLocalStorage = await js.InvokeAsync<string>("readLocalStorage", "theme");
+        if (!string.IsNullOrEmpty(themeFromLocalStorage))
+        {
+            selectedTheme = themeFromLocalStorage;
+            theme_check = themeFromLocalStorage;
+
+        }
+        await js.InvokeVoidAsync("MyInterop.ChangeTheme", selectedTheme);
+    }
+
+    public async Task ChangingTheme(ChangeEventArgs e)
+    {
+        if (selectedTheme == "Light")
+        {
+            selectedTheme = "Dark";
+        }
+        else if (selectedTheme == "Dark")
+        {
+            selectedTheme = "Light";
+        }
+        await js.InvokeVoidAsync("addToLocalStorage", "theme", selectedTheme);
+        await js.InvokeVoidAsync("MyInterop.ChangeTheme", selectedTheme);
     }
 }

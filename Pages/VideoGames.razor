@@ -1,4 +1,5 @@
 ﻿@page "/videogames"
+@inject IJSRuntime js
 
 <Title>Kalen Wallin's Portfolio</Title>
 <Meta content="Software developer, Kalen Wallin, shares his projects and experiences." />
@@ -12,7 +13,7 @@
 </header>
 <body>
     <div class="modal-header">
-        <h2 style="color: grey">2021</h2>
+        <h2>2021</h2>
     </div>
     <div class="row">
         <div class="column">
@@ -30,7 +31,7 @@
         </div>
     </div>
     <div class="modal-header">
-        <h2 style="color: grey">2018</h2>
+        <h2>2018</h2>
     </div>
     <div class="row">
         <div class="column">
@@ -90,15 +91,24 @@
         <div class="fappy_container">
             <h1 class="text-center">Minieval</h1>
             <div class="text-center">
-                <iframe src="https://itch.io/embed/1003723" height="175" width="300" frameborder="0">
-                    <a href="https://maugrift.itch.io/minieval">Minieval by Maugrift, kalenwallin, MagosJurisVulpes, evanmielak, Lotus</a>
-                </iframe>
+                @if (selectedTheme == "Light")
+                {
+                    <iframe src="https://itch.io/embed/1003723" height="175" width="300" frameborder="0">
+                        <a href="https://maugrift.itch.io/minieval">Minieval by Maugrift, kalenwallin, MagosJurisVulpes, evanmielak, Lotus</a>
+                    </iframe>
+                }
+                else
+                {
+                    <iframe frameborder="0" src="https://itch.io/embed/1003723?dark=true" width="552" height="167">
+                        <a href="https://maugrift.itch.io/minieval">Minieval by Maugrift, kalenwallin, MagosJurisVulpes, evanmielak, Lotus</a>
+                    </iframe>
+                }
             </div>
             <h2>Description:</h2>
             <p>
                 A tiny medieval city builder, inspired by Islanders. <br /><br />
                 This game was created by my Game Development club at the University of Nebraska-Lincoln.
-                Our team consisted of 4 programmers, 1 artist, and 1 music programmer. 
+                Our team consisted of 4 programmers, 1 artist, and 1 music programmer.
                 <br /><br />
                 <b>Programmers:</b> Kalen Wallin, Evan Mielak, Aaron Friesen, and Viet Ninh<br />
                 <b>Artist:</b> Ethan Fox <br />
@@ -120,3 +130,17 @@
     <a href="https://kalenwallin.itch.io/fappy-borbs">Fappy Borbs by kalenwallin</a>
 </iframe>
 -->
+
+@code {
+    public string selectedTheme = "Light";
+
+    protected override async Task OnInitializedAsync()
+    {
+        var themeFromLocalStorage = await js.InvokeAsync<string>("readLocalStorage", "theme");
+        if (!string.IsNullOrEmpty(themeFromLocalStorage))
+        {
+            selectedTheme = themeFromLocalStorage;
+
+        }
+    }
+} 
