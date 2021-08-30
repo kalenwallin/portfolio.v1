@@ -7,6 +7,13 @@ I am hosting this website using GitHub Pages.
 
 # Changelog
 
+## v1.3 Changes:
+- Made cards responsive
+- Added margin on right side of body
+- Centered items for mobile
+- Updated Document's images
+- Added spacing in modals
+
 ## v1.2 Changes:
 - Added Dark mode.
 - Animated elements on page load.
