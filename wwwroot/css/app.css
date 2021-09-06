@@ -471,6 +471,7 @@ img {
 
 /* Modal Content/Box */
 .modal-content {
+    z-index: 2;
     background-color: #fefefe;
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -480,6 +481,7 @@ img {
 }
 
 .modal-pfa-content {
+    z-index: 2;
     background-color: #fefefe;
     margin: 0% auto; /* 15% from the top and centered */
     padding: 20px;
@@ -489,6 +491,7 @@ img {
 }
 
 .modal-doc-content {
+    z-index: 2;
     background-color: #fefefe;
     margin: 0% auto; /* 15% from the top and centered */
     padding: 20px;
