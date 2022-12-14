@@ -1,16 +1,12 @@
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using BlazorApp2.Services;
+using Blazor.Services;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Toolbelt.Blazor.Extensions.DependencyInjection;
 
-namespace BlazorApp2
+namespace Blazor
 {
     public class Program
     {
