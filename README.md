@@ -1,8 +1,16 @@
-# Welcome to the personal portfolio of Kalen Wallin!
+# Portfolio.v1
 
-Kalen created this website using Blazor WebAssembly which is a part the .NET Framework and Visual Studio IDE. Blazor uses HTML and CSS as well as C# instead of Javascript.
+Portfolio.v1 is Kalen's first portfolio built to showcase work and projects for employers. This site was built with Blazor Web Assembly, a frontend framework built by Microsoft in the .NET framework, HTML, CSS, JavaScript, and C#.
 
 # Changelog
+
+## v1.4 Changes:
+- Removed unused files
+- Added new card covers
+- Updated about page
+- Updated descriptions
+- Renamed project name
+- Updated sidebar dark mode colors
 
 ## v1.3 Changes:
 - Made cards responsive
