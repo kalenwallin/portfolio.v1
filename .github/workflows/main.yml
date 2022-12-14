@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 3.1
        # publishes Blazor project to the release-folder
     - name: Publish .NET Core Project
-      run: dotnet publish BlazorApp2.csproj -c Release -o release --nologo
+      run: dotnet publish Blazor.csproj -c Release -o release --nologo
       # copy index.html to 404.html to serve the same file when a file is not found
     - name: copy index.html to 404.html
       run: cp release/wwwroot/index.html release/wwwroot/404.html
