@@ -3,7 +3,7 @@
 
 /*dark-theme start*/
 body.dark-theme .sidebar dark {
-    background: #121212;
+    background-image: linear-gradient(#c06c84, #6C5B7B, #355C7D);
     transition: ease .3s;
 }
 
@@ -13,7 +13,7 @@ body.dark-theme .navbar-dark .navbar-brand {
 }
 
 body.dark-theme .sidebar .nav-item a {
-    color: #8f8f8f;
+    color: #c3c3c3;
     transition: ease .3s;
 }
 
@@ -46,7 +46,7 @@ body.dark-theme a, body.dark-theme .btn-link {
 }
 
 body.dark-theme .sidebar {
-    background: #121212;
+    background-image: linear-gradient(#c06c84, #6C5B7B, #355C7D);
     transition: ease .3s;
 }
 
