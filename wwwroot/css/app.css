@@ -283,6 +283,28 @@ app {
     top: 0.5rem;
 }
 
+.about-row {
+    flex-direction: row;
+}
+
+.about-column {
+    float: left;
+    width: 66.66%;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+    padding-top: 2rem;
+    order: 1;
+}
+
+.about-column2 {
+    float: left;
+    width: 33.33%;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+    padding-top: 2rem;
+    order: 2;
+}
+
 @media (max-width: 767.98px) {
     .main .top-row:not(.auth) {
         display: none;
@@ -294,6 +316,31 @@ app {
 
     .main .top-row a, .main .top-row .btn-link {
         margin-left: 0;
+    }
+
+    .about-column, .about-column2 {
+        width: 100%;
+    }
+
+    .about-row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .column {
+        width: 100%;
+    }
+    /* Center header on mobile */
+    h1, h2 {
+        margin: auto;
+    }
+
+    .content {
+        padding-right: 3rem !important;
+    }
+
+    p, h4 {
+        text-align: center;
     }
 }
 
@@ -327,9 +374,7 @@ app {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
-}
 
-@media (min-width: 601px) {
     .modal-header h1, h2 {
         margin-left: -1rem;
     }
@@ -398,52 +443,12 @@ img {
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-    /* Center header on mobile */
-    h1, h2 {
-        margin: auto;
-    }
-    
-    .content {
-        padding-right: 3rem !important;
-    }
 
-    p, h4 {
-        text-align: center;
-    }
 }
 
 @media screen and (max-width: 767px) {
     .content {
         padding-right: 3rem !important;
-    }
-}
-
-.about-column {
-    float: left;
-    width: 66.66%;
-    padding-left: 2rem;
-    padding-right: 0.5rem;
-    padding-top: 2rem;
-}
-
-.about-column2 {
-    float: left;
-    width: 33.33%;
-    padding-left: 2rem;
-    padding-right: 0.5rem;
-    padding-top: 2rem;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-    .about-column {
-        width: 100%;
-    }
-    .about-column2 {
-        width: 100%;
     }
 }
 
