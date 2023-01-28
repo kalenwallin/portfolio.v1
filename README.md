@@ -2,7 +2,7 @@
 
 Portfolio.v1 is Kalen's first portfolio built to showcase work and projects for employers. This site was built with Blazor Web Assembly, a frontend framework built by Microsoft in the .NET framework, HTML, CSS, JavaScript, and C#.
 
-# Changelog
+# Changelog - Deprecated
 
 ## v1.4 Changes:
 - Removed unused files
