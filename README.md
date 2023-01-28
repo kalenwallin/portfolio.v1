@@ -1,6 +1,7 @@
-# Welcome to the personal portfolio of Kalen Wallin!
+# Portfolio.v1
 www.kalenwallin.com
 
-I created this website using Blazor WebAssembly which is a part the .NET Framework and Visual Studio IDE. Blazor uses HTML and CSS as well as C# instead of Javascript.
+Portfolio.v1 is created using Blazor WebAssembly, which is part of the .NET Framework. Blazor uses HTML and CSS as well as C# and Javascript.
 
-I am hosting this website using Amazon Web Services (AWS).
+## Deployment
+Code is pushed to this branch and then compiled using a GitHub Actions workflow. The compiled code is sent to the gh-pages branch. GitHub Pages uses this branch to serve the website. 
