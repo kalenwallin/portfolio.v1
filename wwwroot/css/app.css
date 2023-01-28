@@ -434,6 +434,20 @@ img {
     padding-top: 2rem;
 }
 
+.pcol {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+dt {
+    font-weight: 700;
+}
+
+dd {
+    margin-bottom: 0;
+    margin-left: 2rem;
+}
+
 /* Clear floats after the columns */
 .row:after {
     content: "";
@@ -449,6 +463,13 @@ img {
 @media screen and (max-width: 767px) {
     .content {
         padding-right: 3rem !important;
+    }
+    .column {
+        width: 100%;
+        text-align: center;
+    }
+    dd {
+        margin-left: 0;
     }
 }
 
