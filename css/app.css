@@ -456,11 +456,6 @@ dd {
     clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-
-}
-
 @media screen and (max-width: 767px) {
     .content {
         padding-right: 3rem !important;
@@ -523,7 +518,7 @@ dd {
     margin: 5% auto; /* 15% from the top and centered */
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; /* Could be more or less, depending on screen size */
+    max-width: 1026px; /* Fits the video games */
     transition: ease .3s;
 }
 
@@ -576,7 +571,6 @@ dd {
 .modal-doc-container-desktop {
     display: block;
 }
-
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
