@@ -1,14 +1,14 @@
 ﻿@page "/websites"
 
 <header>
-	<div class="modal-header slide-in-from-bottom">
-		<h1>Websites</h1>
-	</div>
+    <div class="modal-header slide-in-from-bottom">
+        <h1>Websites</h1>
+    </div>
 
 </header>
 <body>
-	<div>
-		<div class="row slide-in-from-bottom-light">
+    <div>
+        <div class="row slide-in-from-bottom-light">
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id02').style.display='block'">
                     <div class="img-container">
@@ -20,31 +20,40 @@
                     </div>
                 </div>
             </div>
-			<div class="column to-slide-bottom-light animate">
-				<div class="card" onclick="document.getElementById('id01').style.display='block'">
-					<div class="img-container">
-						<img src="/Images/voting_system.png" alt="Voting System Logo">
-					</div>
-					<div class="container">
-						<h4><b>Voting System</b></h4>
-						<p>Front End Developer</p>
-					</div>
-				</div>
-			</div>
-			<div class="column to-slide-bottom-light animate">
-			</div>
-		</div>
-		<br />
-	</div>
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id03').style.display='block'">
+                    <div class="img-container">
+                        <img src="/Images/portfoliov1.png" alt="Portfolio version 1 Logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>Portfolio.v1</b></h4>
+                        <p>Blazor Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id01').style.display='block'">
+                    <div class="img-container">
+                        <img src="/Images/voting_system.png" alt="Voting System Logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>Voting System</b></h4>
+                        <p>Front End Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br />
+    </div>
 </body>
 
 <!-- The Modal -->
 <div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
-	<span onclick="document.getElementById('id01').style.display='none'"
-		  class="close" title="Close Modal">&times;</span>
+    <span onclick="document.getElementById('id01').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
 
-	<!-- Modal Content -->
-	<form class="modal-content animate">
+    <!-- Modal Content -->
+    <form class="modal-content animate">
         <div class="fappy_container">
             <h1 class="text-center">Voting System</h1>
             <hr />
@@ -73,6 +82,7 @@
                 <b>Development Details</b><br />
                 The project was developed using <b>MVC</b> and <b>SOLID</b> design principles.
                 <br />
+                <br />
                 <a class="font-weight-bold">Development Tools:</a> .NET Framework, ASP.NET Core 3.1, Razor Pages
                 <br />
                 <a class="font-weight-bold">Languages:</a> HTML, CSS, C#, and Javascript.
@@ -83,37 +93,77 @@
             </p>
             <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
         </div>
-	</form>
+    </form>
 </div>
 
 <!-- The Modal -->
 <div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
-	<span onclick="document.getElementById('id02').style.display='none'"
-		  class="close" title="Close Modal">&times;</span>
+    <span onclick="document.getElementById('id02').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
 
-	<!-- Modal Content -->
-	<form class="modal-content animate">
-		<div class="fappy_container">
-			<h1 class="text-center">Portfolio.v2</h1>
-			<hr />
-			<br />
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+        <div class="fappy_container">
+            <h1 class="text-center">Portfolio.v2</h1>
+            <hr />
+            <br />
             <iframe loading="lazy" frameborder="0" src="https://dj.kalenwallin.com/" allowfullscreen="" width="980" height="688"></iframe>
-			<br /><br />
-			<p>
-				<b>What it is</b><br />
-				Portfolio.v2 is a new portfolio website currently in progress. This site showcases Kalen's growth as a web developer and is a playground for him to test new ideas.
-				It contains the same content as here, so no need to reread everything! The design was inspired by Netflix.
-				<br />
-				<br />
-				<b>Features</b><br />
-				Like posts to show support.
-				<br />
-				<br />
-				<a class="font-weight-bold">Development Tools:</a> Django, PythonAnywhere
-				<br />
-				<a class="font-weight-bold">Languages:</a> HTML, CSS, Javascript, and Python
-			</p>
-			<button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
-		</div>
-	</form>
+            <br /><br />
+            <p>
+                <b>What it is</b><br />
+                Portfolio.v2 is a new portfolio website currently in progress. This site showcases Kalen's growth as a web developer and is a playground for him to test new ideas.
+                It contains the same content as here, so no need to reread everything! The design was inspired by Netflix.
+                <br />
+                <br />
+                <b>Features</b><br />
+                Like posts to show support.
+                <br />
+                <br />
+                <a class="font-weight-bold">Development Tools:</a> Django, PythonAnywhere
+                <br />
+                <a class="font-weight-bold">Languages:</a> HTML, CSS, Javascript, and Python
+            </p>
+            <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
+        </div>
+    </form>
+</div>
+
+<!-- The Modal -->
+<div id="id03" class="modal" onclick="document.getElementById('id03').style.display='none'">
+    <span onclick="document.getElementById('id03').style.display='none'"
+          class="close" title="Close Modal">&times;</span>
+
+    <!-- Modal Content -->
+    <form class="modal-content animate">
+        <div class="fappy_container">
+            <h1 class="text-center">Voting System</h1>
+            <hr />
+            <br />
+            <div class="text-center">
+                <img src="/Images/portfoliov1.png" alt="Portfolio version 1 Logo">
+            </div>
+            <br /><br />
+                  <p>
+                      <b>What it is</b><br />
+                      Portfolio.v1 is the first website Kalen created to show off his experience for employers.
+                      <br />
+                      <br />
+                      <b>Features</b><br />
+                      Dark Mode. Users can toggle light and dark themes.
+                      Fast and Responsive. Single page application that looks great on all devices.
+                      Secured by Cloudflare. 
+                      <br />
+                      <br />
+                      <b>Development Details</b><br />
+                      The project was developed using <b>Blazor</b> which is a web development framework created by Microsoft that allows developers 
+                      to build web applications using C# and .NET. With Blazor, the user interface is rendered in the browser using WebAssembly.
+                      <br />
+                      <br />
+                      <a class="font-weight-bold">Development Tools:</a> .NET Framework, Blazor, Razor Pages
+                      <br />
+                      <a class="font-weight-bold">Languages:</a> HTML, CSS, C#, and Javascript.
+                  </p>
+            <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+        </div>
+    </form>
 </div>
