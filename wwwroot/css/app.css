@@ -76,6 +76,10 @@ body.dark-theme .btn-block:focus {
 body.dark-theme button:focus {
     outline: none;
 }
+
+body.dark-theme hr {
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
 /*dark-theme end*/
 
 /* scrollbar dark theme */
