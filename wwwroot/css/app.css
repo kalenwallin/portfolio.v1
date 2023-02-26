@@ -1,7 +1,23 @@
 @import url('open-iconic/font/css/open-iconic-bootstrap.min.css');
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
+.stats-col.dark {
+    display: none;
+}
+
+.stats-col {
+    display: block;
+}
+
 /*dark-theme start*/
+body.dark-theme .stats-col.dark {
+    display: block;
+}
+
+body.dark-theme .stats-col {
+    display: none;
+}
+
 body.dark-theme .sidebar dark {
     background-image: linear-gradient(#c06c84, #6C5B7B, #355C7D);
     transition: ease .3s;
