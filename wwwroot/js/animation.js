@@ -58,3 +58,27 @@ win.on("scroll", function (event) {
     });
 
 });
+
+function isIOS() {
+    if (/iPad|iPhone|iPod/.test(navigator.platform)) {
+        return true;
+    } else {
+        return navigator.maxTouchPoints &&
+            navigator.maxTouchPoints > 2 &&
+            /MacIntel/.test(navigator.platform);
+    }
+}
+
+function isIpadOS() {
+    return navigator.maxTouchPoints &&
+        navigator.maxTouchPoints > 2 &&
+        /MacIntel/.test(navigator.platform);
+}
+
+if (isIpadOS) {
+    console.log("ipad");
+} else if (isIOS) {
+    console.log("ios");
+} else {
+    console.log('not ios');
+}
