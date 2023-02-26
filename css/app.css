@@ -499,6 +499,12 @@ dd {
     }
 }
 
+@media screen and (max-width: 844px) {
+    .pcol {
+        width: 100%;
+    }
+}
+
 .card .container {
     max-height: 0;
     padding: 0px;
