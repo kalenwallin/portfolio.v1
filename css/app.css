@@ -493,7 +493,7 @@ dd {
     }
 }
 
-@media screen and (max-width: 1088px) {
+@media screen and (max-width: 1152px) {
     .pcol {
         width: 50%;
     }
