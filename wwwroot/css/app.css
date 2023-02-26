@@ -78,9 +78,22 @@ body.dark-theme button:focus {
 }
 /*dark-theme end*/
 
+/* scrollbar dark theme */
+[data-color-scheme="dark"] {
+    color-scheme: dark;
+}
+
+[data-color-scheme="light"] {
+    color-scheme: light;
+}
+
 html, body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     transition: ease .3s;
+}
+
+.sidebar {
+    overflow: auto;
 }
 
 /* shift items left to align with cards */
