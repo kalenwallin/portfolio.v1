@@ -347,9 +347,11 @@ app {
     .column {
         width: 100%;
     }
+
     /* Center header on mobile */
     h1, h2 {
         margin: auto;
+        text-align: center;
     }
 
     .content {
@@ -357,7 +359,7 @@ app {
     }
 
     p, h4 {
-        text-align: center;
+        text-align: left;
     }
 }
 
@@ -454,7 +456,7 @@ img {
 .pcol {
     padding-left: 0;
     padding-right: 0;
-    width: 50%;
+    width: 33%;
 }
 
 dt {
@@ -483,6 +485,10 @@ dd {
     }
     dd {
         margin-left: 0;
+    }
+    .pcol {
+        text-align: left;
+        margin-left: -1rem;
     }
 }
 
