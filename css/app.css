@@ -628,27 +628,6 @@ dd {
     font-size: 20px;
 }
 
-/*iPad Pro 11" 3rd gen*/
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-    /* Toggle Button */
-    .dark-theme-toggle {
-        margin-top: -25.5px; /* -25.5px on iPad*/
-    }
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen and (min-device-width: 1194px) and (max-device-width: 1194px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-    /* Toggle Button */
-    .dark-theme-toggle {
-        margin-top: -25.5px; /* -25.5px on iPad*/
-    }
-}
-
 /* Toggle Button */
 .dark-theme-toggle {
     -webkit-appearance: none;
@@ -710,6 +689,27 @@ dd {
     -webkit-transition: ease .3s;
     -moz-transition: ease .3s;
     -o-transition: ease .3s;
+}
+
+/*iPad Pro 11" 3rd gen*/
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Toggle Button */
+    .dark-theme-toggle {
+        margin-top: -25.5px; /* -25.5px on iPad*/
+    }
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1194px) and (max-device-width: 1194px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+    /* Toggle Button */
+    .dark-theme-toggle {
+        margin-top: -25.5px; /* -25.5px on iPad*/
+    }
 }
 
 /* Animation */
