@@ -31,7 +31,7 @@ body.dark-theme .card {
     background-color: #121212;
 }
 
-body.dark-theme .modal-content, body.dark-theme .modal-pfa-content, body.dark-theme .modal-doc-content {
+body.dark-theme .modal-content, body.dark-theme .modal-pfa-content, body.dark-theme {
     background-color: #1e1e1e;
     border: 1px solid #000;
 }
@@ -532,16 +532,6 @@ dd {
     transition: ease .3s;
 }
 
-.modal-doc-content {
-    z-index: 2;
-    background-color: #fefefe;
-    margin: 0% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 55%; /* Could be more or less, depending on screen size */
-    transition: ease .3s;
-}
-
 /* The Close Button */
 .close {
     color: #aaa;
@@ -564,23 +554,8 @@ dd {
     margin: 0 auto;
 }
 
-.modal-doc-container-mobile {
-    display: none;
-}
-
-.modal-doc-container-desktop {
-    display: block;
-}
-
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
-    .modal-doc-container-mobile {
-        display: block;
-    }
-
-    .modal-doc-container-desktop {
-        display: none;
-    }
 
     .modal_column {
         width: 100%;
@@ -594,14 +569,6 @@ dd {
         transition: ease .3s;
     }
     .modal-pfa-content {
-        background-color: #fefefe;
-        margin: 0% auto; /* 15% from the top and centered */
-        padding: 20px;
-        border: 1px solid #888;
-        width: 100%; /* Could be more or less, depending on screen size */
-        transition: ease .3s;
-    }
-    .modal-doc-content {
         background-color: #fefefe;
         margin: 0% auto; /* 15% from the top and centered */
         padding: 20px;
