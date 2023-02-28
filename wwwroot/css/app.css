@@ -473,7 +473,6 @@ img {
     padding-left: 0;
     padding-right: 0;
     width: 33%;
-    margin-left: -1rem;
     text-align: center;
 }
 
@@ -515,7 +514,6 @@ dd {
     }
     .pcol {
         text-align: left;
-        margin-left: -1rem;
     }
 }
 
