@@ -837,3 +837,10 @@ dd {
     justify-content: center;
     z-index: 9999;
 }
+
+.about-icons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 42px;
+}
