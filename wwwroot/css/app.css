@@ -823,3 +823,17 @@ dd {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+
+.preloader {
+    background: #ff90b1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}

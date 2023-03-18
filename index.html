@@ -26,7 +26,6 @@
 
 <body>
     <app>
-        Loading...
     </app>
 
     <div id="blazor-error-ui">
@@ -34,19 +33,23 @@
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="_framework/blazor.webassembly.js"></script>
-    <script src="js/animation.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="js/animation.js"></script>
     <script>
         function addToLocalStorage(key, value) { localStorage[key] = value; }
         function readLocalStorage(key) { return localStorage[key]; }
 
         window.MyInterop = (function () {
             const _changeTheme = function (theme) {
-                if (theme == 'Dark')
+                if (theme == 'Dark') {
                     document.body.classList.add('dark-theme');
-                else
+                    document.documentElement.setAttribute("data-color-scheme", "dark");
+                } else {
                     document.body.classList.remove('dark-theme');
+                    document.documentElement.setAttribute("data-color-scheme", "light");
+                }
             };
 
             return {
