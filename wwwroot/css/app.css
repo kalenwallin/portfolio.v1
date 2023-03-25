@@ -590,7 +590,7 @@ dd {
 .modal-content {
     z-index: 2;
     background-color: #fefefe;
-    margin: 5% auto; /* 15% from the top and centered */
+    margin: 0% auto 0% auto;
     padding: 20px;
     border: 1px solid #888;
     max-width: 1026px; /* Fits the video games */
@@ -633,7 +633,7 @@ dd {
 
     .modal-content {
         background-color: #fefefe;
-        margin: 0% auto; /* 15% from the top and centered */
+        margin: 0% auto 0% auto;
         padding: 20px;
         border: 1px solid #888;
         width: 100%; /* Could be more or less, depending on screen size */
