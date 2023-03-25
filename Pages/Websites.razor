@@ -10,13 +10,24 @@
     <div>
         <div class="row slide-in-from-bottom-light">
             <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id04').style.display='block'">
+                    <div class="img-container">
+                        <img src="/Images/portfoliov3.png" alt="Potfolio version 3 Logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>Portfolio.v3</b></h4>
+                        <p>Next.js Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id02').style.display='block'">
                     <div class="img-container">
                         <img src="/Images/portfoliov2.png" alt="Potfolio version 2 Logo">
                     </div>
                     <div class="container">
                         <h4><b>Portfolio.v2</b></h4>
-                        <p>Full Stack Django Developer</p>
+                        <p>Django Developer</p>
                     </div>
                 </div>
             </div>
@@ -31,6 +42,8 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="row slide-in-from-bottom-light">
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id01').style.display='block'">
                     <div class="img-container">
@@ -158,6 +171,15 @@
                     While the GitHub Pages version can be found at <br />
                     <a href="https://v1.kalenwallin.com/" target="_blank">https://v1.kalenwallin.com/</a> <br />.
                 </p>*@
+            <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+        </div>
+    </form>
+</div>
+
+<div id="id04" class="modal" onclick="document.getElementById('id04').style.display='none'">
+    <form class="modal-content notion animate">
+        <div class="fappy_container">
+            <iframe src="https://v3.kalenwallin.com/portfoliov3" style="width: 100%; height: 95%;" />
             <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
         </div>
     </form>
