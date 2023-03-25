@@ -597,6 +597,10 @@ dd {
     transition: ease .3s;
 }
 
+    .modal-content.notion {
+        height: 100%;
+    }
+
 /* The Close Button */
 .close {
     color: #aaa;
@@ -613,6 +617,7 @@ dd {
     }
 
 .fappy_container {
+    height: 100%;
 }
 
 .fappy_h1 {
