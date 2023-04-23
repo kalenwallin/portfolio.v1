@@ -861,3 +861,7 @@ dd {
     align-items: center;
     height: 42px;
 }
+
+iframe {
+    border: none;
+}
