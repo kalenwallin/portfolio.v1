@@ -1,5 +1,5 @@
 # Portfolio.v1
-www.kalenwallin.com
+v1.kalenwallin.com
 
 Portfolio.v1 is Kalen's first portfolio built to showcase his work experience and projects for employers. This site was built with Blazor Web Assembly, a frontend framework built by Microsoft in the .NET framework.
 
