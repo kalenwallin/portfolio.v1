@@ -4,6 +4,7 @@
     string[] intermediate = new string[] { "Adobe Creative Suite", "Microsoft Office Suite", "Visual Studio", "Blazor", "Razor Pages", "Godot", "PythonAnywhere", "Unity", "NodeJS", "Vercel", ".NET", "ExpressJS", "C", "C#", "GDScript", "Java", "Notion" };
     string[] beginner = new string[] { "Eclipse", "MySQL Workbench", "ASP.NET Core", "Amazon Web Services", "CircleCI", "Flutter", "ANTLR", "C++", "Dart", "Haskell", "Prolog", "SQL", "XAML" };
 }
+@inject Services.AppData AppData;
 
 
 <header>
@@ -40,19 +41,19 @@
     </div>
     <div class="about-column2">
         <div class="card-left-about">
-            <img src="/Images/ColorfulSuit.JPG" alt="Photo of Kalen Wallin" style="width:100%" />
+            <img src=@AppData.GetImageLink("ColorfulSuit.JPG") alt="Photo of Kalen Wallin" style="width:100%" />
         </div>
         <br />
         <div class="about-icons">
             <div class="light">
-                <a href="mailto:kalenwallin1@gmail.com" target="_blank"><img src="/Images/mail.svg" height="31" /></a>
-                <a href="https://www.linkedin.com/in/kalenwallin/" target="_blank"><img src="/Images/linkedin.svg" height="31" /></a>
-                <a href="https://github.com/kalenwallin" target="_blank"><img src="/Images/github.svg" height="31" /></a>
+                <a href="mailto:kalenwallin1@gmail.com" target="_blank"><img src=@AppData.GetImageLink("mail.svg") height="31" /></a>
+                <a href="https://www.linkedin.com/in/kalenwallin/" target="_blank"><img src=@AppData.GetImageLink("linkedin.svg") height="31" /></a>
+                <a href="https://github.com/kalenwallin" target="_blank"><img src=@AppData.GetImageLink("github.svg") height="31" /></a>
             </div>
             <div class="dark">
-                <a href="mailto:kalenwallin1@gmail.com" target="_blank"><img src="/Images/mail_dark.svg" height="31" /></a>
-                <a href="https://www.linkedin.com/in/kalenwallin/" target="_blank"><img src="/Images/linkedin_dark.svg" height="31" /></a>
-                <a href="https://github.com/kalenwallin" target="_blank"><img src="/Images/github_dark.svg" height="31" /></a>
+                <a href="mailto:kalenwallin1@gmail.com" target="_blank"><img src=@AppData.GetImageLink("mail_dark.svg") height="31" /></a>
+                <a href="https://www.linkedin.com/in/kalenwallin/" target="_blank"><img src=@AppData.GetImageLink("linkedin_dark.svg") height="31" /></a>
+                <a href="https://github.com/kalenwallin" target="_blank"><img src=@AppData.GetImageLink("github_dark.svg") height="31" /></a>
             </div>
         </div>
     </div>
