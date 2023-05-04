@@ -2,20 +2,20 @@
 @inject IJSRuntime js
 @inject Services.AppData AppData;
 
-<Title>Portfolio.v1</Title>
+<Title>@AppData.title</Title>
 <Link Rel="icon" Href="/favicon.ico" />
 <Meta name="author" content="Kalen Wallin" />
-<Meta name="description" content="Showcasing his skills through jobs, projects, school transcripts, community service, and life experiences." />
+<Meta name="description" content=@AppData.description />
 
 <!-- Facebook sharing data -->
 <Meta property="og:image" content=@AppData.GetImageLink("portfoliov12.png") />
-<Meta property="og:description" content="Showcasing his skills through jobs, projects, school transcripts, community service, and life experiences." />
-<Meta property="og:title" content="Portfolio.v1 | Kalen Wallin" />
+<Meta property="og:description" content=@AppData.description />
+<Meta property="og:title" content=@AppData.title />
 <Meta property="og:type" content="website" />
 <Meta property="og:url" content="https://v1.kalenwallin.com/" />
 
 <!-- Twitter sharing data -->
-<Meta name="twitter:title" content="Kalen Wallin | Portfolio.v1" />
+<Meta name="twitter:title" content=@AppData.title />
 
 <div class="sidebar">
     <NavMenu />
