@@ -855,6 +855,11 @@ dd {
     z-index: 9999;
 }
 
+    .preloader object {
+        width: 128px;
+        height: 128px;
+    }
+
 .about-icons div {
     display: flex;
     justify-content: space-evenly;
