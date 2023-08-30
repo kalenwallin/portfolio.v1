@@ -10,97 +10,130 @@
 <body>
     <div>
         <div class="row slide-in-from-bottom-light">
-            <div class="column">
+            <!-- Card 1 -->
+            <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id01').style.display='block'">
-                    <img src=@AppData.GetImageLink("resume.png") alt="Resume Graphic">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("resume.png")" alt="Resume graphic">
+                    </div>
                     <div class="container">
                         <h4><b>Resume</b></h4>
                         <p>General Purpose</p>
+                        <p style="font-size: 12px">2023</p>
                     </div>
                 </div>
             </div>
-            <div class="column">
+
+            <!-- Modal 1 -->
+            <div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v1.kalenwallin.com/Documents/Resume.pdf" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Card 2 -->
+            <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id02').style.display='block'">
-                    <img src=@AppData.GetImageLink("unl_transcript.png") alt="UNL Transcript Graphic">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("ThesisCover.jpg")" alt="Honors Thesis Cover Graphic">
+                    </div>
                     <div class="container">
-                        <h4><b>University Transcript</b></h4>
-                        <p>University of Nebraska-Lincoln</p>
+                        <h4><b>Honors Thesis</b></h4>
+                        <p>University of Nebraska-Lincoln (UNL)</p>
+                        <p style="font-size: 12px">2023</p>
                     </div>
                 </div>
             </div>
-            <div class="column">
+
+            <!-- Modal 2 -->
+            <div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/undergrad-honors-thesis" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id03').style.display='block'">
-                    <img src=@AppData.GetImageLink("cchs_transcript.png") alt="CCHS Transcript Graphic">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("unl_transcript.png")" alt="University of Nebraska-Lincoln transcript graphic">
+                    </div>
                     <div class="container">
-                        <h4><b>High School Transcript</b></h4>
-                        <p>Chase County High School</p>
+                        <h4><b>BA Computer Science</b></h4>
+                        <p>University of Nebraska-Lincoln (UNL)</p>
+                        <p style="font-size: 12px">2023</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div id="id03" class="modal" onclick="document.getElementById('id03').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v1.kalenwallin.com/Documents/unl_transcript.pdf" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row slide-in-from-bottom-light">
+            <!-- Card 4 -->
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id04').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("ru_transcript.png")" alt="Reykjavík University graphic">
+                    </div>
+                    <div class="container">
+                        <h4><b>Exchange Studies</b></h4>
+                        <p>Reykjavík University (RU)</p>
+                        <p style="font-size: 12px">2022</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 4 -->
+            <div id="id04" class="modal" onclick="document.getElementById('id04').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v1.kalenwallin.com/Documents/ru_transcript.pdf" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id04').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Card 5 -->
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id05').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("cchs_transcript.png")" alt="CCHS Transcript graphic">
+                    </div>
+                    <div class="container">
+                        <h4><b>High School</b></h4>
+                        <p>Chase County High School (CCHS)</p>
+                        <p style="font-size: 12px">2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 5 -->
+            <div id="id05" class="modal" onclick="document.getElementById('id05').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v1.kalenwallin.com/Documents/cchstranscript.pdf" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id05').style.display='none'">Done</button>
+                    </div>
+                </form>
             </div>
         </div>
         <br />
     </div>
 </body>
-
-<!-- The Modal -->
-<div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
-
-    <!-- Modal Content -->
-    <form class="modal-content animate">
-        <div class="modal-container">
-            <h1 class="text-center">Resume</h1>
-            <hr />
-            <div class="iframe-container">
-                <iframe loading="lazy" class="responsive-iframe" src="/Documents/Resume.pdf"></iframe>
-            </div>
-            <br /><br />
-            <p>
-                Having issues with the pdf? Try the link below.<br />
-                <a href="/Documents/Resume.pdf" download="Kalen Wallin Resume" target="_blank">Download PDF</a>
-            </p>
-            <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<!-- The Modal 2 -->
-<div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
-
-    <!-- Modal Content -->
-    <form class="modal-content animate">
-        <div class="modal-container">
-            <h1 class="text-center">University of Nebraska-Lincoln Transcript</h1>
-            <hr />
-            <div class="iframe-container">
-                <iframe loading="lazy" class="responsive-iframe" src="/Documents/unl_transcript.pdf"></iframe>
-            </div>
-            <br /><br />
-            <p>
-                Having issues with the pdf? Try the link below.<br />
-                <a href="/Documents/unl_transcript.pdf" download="Kalen Wallin UNL Transcript" target="_blank">Download PDF</a>
-            </p>
-            <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<!-- The Modal 3 -->
-<div id="id03" class="modal" onclick="document.getElementById('id03').style.display='none'">
-
-    <!-- Modal Content -->
-    <form class="modal-content animate">
-        <div class="modal-container">
-            <h1 class="text-center">Chase County High School Transcript</h1>
-            <hr />
-            <div class="iframe-container">
-                <iframe loading="lazy" class="responsive-iframe" src="/Documents/cchstranscript.pdf"></iframe>
-            </div>
-            <br /><br />
-            <p>
-                Having issues with the pdf? Try the link below.<br />
-                <a href="/Documents/cchstranscript.pdf" download="Kalen Wallin CCHS Transcript" target="_blank">Download PDF</a>
-            </p>
-            <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>

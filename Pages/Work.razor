@@ -10,109 +10,130 @@
 <body>
     <div>
         <div class="row slide-in-from-bottom-light">
+            <!-- Card 1 -->
             <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id01').style.display='block'">
+                <div class="card" onclick="document.getElementById('id06').style.display='block'">
                     <div class="img-container">
-                        <img src=@AppData.GetImageLink("farmafield.png") alt="FarmAfield internship graphic">
+                        <img src="@AppData.GetImageLink("auto_corn_ticket.png")" alt="Auto Corn Ticket graphic">
                     </div>
                     <div class="container">
-                        <h4><b>FarmAfield</b></h4>
-                        <p>FarmAfield</p>
+                        <h4><b>Auto Corn Ticket</b></h4>
+                        <p>Python Programmer</p>
+                        <p style="font-size: 12px">2023</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal 1 -->
+            <div id="id06" class="modal" onclick="document.getElementById('id06').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/auto-corn-ticket" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id06').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Card 2 -->
             <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id05').style.display='block'">
+                <div class="card" onclick="document.getElementById('id07').style.display='block'">
                     <div class="img-container">
-                        <img src=@AppData.GetImageLink("unl_ta.png") alt="University of Nebraska-Lincoln Software Engineering Teaching Assistant graphic">
+                        <img src="@AppData.GetImageLink("mrp_Internship.png")" alt="A graphics that shows MRP's logo and the word internship colored white below it with a yellowish orange background">
+                    </div>
+                    <div class="container">
+                        <h4><b>MRP Internship</b></h4>
+                        <p>Creative Strategist Intern</p>
+                        <p style="font-size: 12px">2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 2 -->
+            <div id="id07" class="modal" onclick="document.getElementById('id07').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/mrp" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id07').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+
+
+            <!-- Card 3 -->
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id01').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("farmafield.png")" alt="FarmAfield internship graphic">
+                    </div>
+                    <div class="container">
+                        <h4><b>FarmAfield</b></h4>
+                        <p>Django Web Developer Intern</p>
+                        <p style="font-size: 12px">2021</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal 3 -->
+            <div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/fullstack-web-developer" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row slide-in-from-bottom-light">
+            <!-- Card 4 -->
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id02').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("unl_ta.png")" alt="University of Nebraska-Lincoln Software Engineering Teaching Assistant graphic">
                     </div>
                     <div class="container">
                         <h4><b>University of Nebraska-Lincoln</b></h4>
                         <p>Software Engineering Teaching Assistant</p>
+                        <p style="font-size: 12px">2021</p>
                     </div>
                 </div>
             </div>
-            <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id03').style.display='block'">
-                    <div class="img-container">
-                        <img src=@AppData.GetImageLink("wallin_farms.png") alt="Wallin Farms Logo">
+
+            <!-- Modal 4 -->
+            <div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/unl-ta" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
                     </div>
-                    <div class="container">
-                        <h4><b>Wallin Farms</b></h4>
-                        <p>Farmhand & Office</p>
-                    </div>
-                </div>
+                </form>
             </div>
-        </div>
-        <div class="row slide-in-from-bottom-light">
+
+
+            <!-- Card 5 -->
             <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id02').style.display='block'">
+                <div class="card" onclick="document.getElementById('id05').style.display='block'">
                     <div class="img-container">
-                        <img src=@AppData.GetImageLink("initialize.png") alt="Initialize UNL Logo White">
-                    </div>
-                    <div class="container">
-                        <h4><b>Initialize</b></h4>
-                        <p>Curriculum Developer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id04').style.display='block'">
-                    <div class="img-container">
-                        <img src=@AppData.GetImageLink("imperial_pool.png") alt="Imperial Pool Logo">
+                        <img src="@AppData.GetImageLink("imperial_pool.png")" alt="Imperial Pool Logo">
                     </div>
                     <div class="container">
                         <h4><b>Imperial Pool</b></h4>
                         <p>Lifeguard</p>
+                        <p style="font-size: 12px">2017</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Modal 5 -->
+            <div id="id05" class="modal" onclick="document.getElementById('id05').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/lifeguard" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id05').style.display='none'">Done</button>
+                    </div>
+                </form>
             </div>
         </div>
         <br />
     </div>
 </body>
-
-<div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/fullstack-web-developer" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/computer-science-curriculum-developer" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<div id="id03" class="modal" onclick="document.getElementById('id03').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/farmhand" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<div id="id04" class="modal" onclick="document.getElementById('id04').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/lifeguard" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id04').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<div id="id05" class="modal" onclick="document.getElementById('id05').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/unl-ta" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id05').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>

@@ -10,14 +10,28 @@
 <body>
     <div>
         <div class="row slide-in-from-bottom-light">
+            <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id01').style.display='block'">
-                    <img src=@AppData.GetImageLink("lifting_calculator.png") alt="Weight Lifting Calculator Screenshot">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("lifting_calculator.png")" alt="Weight Lifting Calculator Screenshot">
+                    </div>
                     <div class="container">
                         <h4><b>Weight Lifting Calculator</b></h4>
-                        <p>Xamarin Developer</p>
+                        <p>Xamarin Mobile Developer</p>
+                        <p style="font-size: 12px">2020</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Modal HTML -->
+            <div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/weight-lifting-calculator" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+                    </div>
+                </form>
             </div>
             <div class="column to-slide-bottom-light animate">
             </div>
@@ -27,12 +41,3 @@
         <br />
     </div>
 </body>
-
-<div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/weight-lifting-calculator" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>

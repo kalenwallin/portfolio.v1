@@ -10,68 +10,76 @@
 <body>
     <div>
         <div class="row slide-in-from-bottom-light">
+            <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id03').style.display='block'">
+                <div class="card" onclick="document.getElementById('id01').style.display='block'">
                     <div class="img-container">
-                        <img src=@AppData.GetImageLink("baldorf.png") alt="baldorf graphic">
+                        <img src="@AppData.GetImageLink("baldorf.png")" alt="baldorf graphic">
                     </div>
                     <div class="container">
                         <h4><b>baldorf</b></h4>
                         <p>Unity Game Developer</p>
+                        <p style="font-size: 12px">2022</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal HTML -->
+            <div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/baldorf" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id04').style.display='block'">
+                <div class="card" onclick="document.getElementById('id02').style.display='block'">
                     <div class="img-container">
-                        <img src=@AppData.GetImageLink("godot_demo.png") alt="godot demo graphic">
+                        <img src="@AppData.GetImageLink("godot_demo.png")" alt="godot demo graphic">
                     </div>
                     <div class="container">
                         <h4><b>Godot Demo</b></h4>
                         <p>Godot Game Developer</p>
+                        <p style="font-size: 12px">2022</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Modal HTML -->
+            <div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/godot-game-level-demo" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
-                <div class="card" onclick="document.getElementById('id02').style.display='block'">
+                <div class="card" onclick="document.getElementById('id03').style.display='block'">
                     <div class="img-container">
-                        <img src=@AppData.GetImageLink("minieval.png") alt="Minieval Logo">
+                        <img src="@AppData.GetImageLink("minieval.png")" alt="Minieval Logo">
                     </div>
                     <div class="container">
                         <h4><b>Minieval</b></h4>
                         <p>Godot Game Developer</p>
+                        <p style="font-size: 12px">2021</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- Modal HTML -->
+            <div id="id03" class="modal" onclick="document.getElementById('id03').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="fappy_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/minieval" style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
+                    </div>
+                </form>
             </div>
         </div>
         <br />
     </div>
 </body>
-
-<!-- The Modal -->
-<div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/minieval" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id04').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<div id="id03" class="modal" onclick="document.getElementById('id03').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/baldorf" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
-
-<div id="id04" class="modal" onclick="document.getElementById('id04').style.display='none'">
-    <form class="modal-content notion animate">
-        <div class="fappy_container">
-            <iframe loading="lazy" src="https://v3.kalenwallin.com/godot-game-level-demo" style="width: 100%; height: 95%;" />
-            <button class="btn-block" type="button" onclick="document.getElementById('id04').style.display='none'">Done</button>
-        </div>
-    </form>
-</div>
