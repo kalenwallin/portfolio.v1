@@ -1,9 +1,4 @@
 ﻿@page "/"
-@{
-    string[] advanced = new string[] { "VS Code", "Figma", "Adobe Express", "GitHub", "Microsoft Teams", "Django", "HTML & CSS", "JavaScript", "Python" };
-    string[] intermediate = new string[] { "Adobe Creative Suite", "Microsoft Office Suite", "Visual Studio", "Blazor", "Razor Pages", "Godot", "PythonAnywhere", "Unity", "NodeJS", "Vercel", ".NET", "ExpressJS", "C", "C#", "GDScript", "Java", "Notion" };
-    string[] beginner = new string[] { "Eclipse", "MySQL Workbench", "ASP.NET Core", "Amazon Web Services", "CircleCI", "Flutter", "ANTLR", "C++", "Dart", "Haskell", "Prolog", "SQL", "XAML" };
-}
 @inject Services.AppData AppData;
 
 
@@ -56,44 +51,6 @@
                 <a href="https://github.com/kalenwallin" target="_blank"><img src=@AppData.GetImageLink("github_dark.svg") height="31" /></a>
             </div>
         </div>
-    </div>
-</div>
-<div class="about-row slide-in-from-bottom-light">
-    <div class="about-column" style="width:100%">
-        <p class="about-p">
-            Here are some tools, frameworks, libraries, and coding languages Kalen has worked with:
-            <br />
-            <div class="column pcol">
-                <b>Advanced</b>
-                <hr />
-                <dl>
-                    @foreach (string currentSkill in advanced)
-                    {
-                        <dt>@currentSkill</dt>
-                    }
-                </dl>
-            </div>
-            <div class="column pcol">
-                <b>Intermediate</b>
-                <hr />
-                <dl>
-                    @foreach (string currentSkill in intermediate)
-                    {
-                        <dt>@currentSkill</dt>
-                    }
-                </dl>
-            </div>
-            <div class="column pcol">
-                <b>Beginner</b>
-                <hr />
-                <dl>
-                    @foreach (string currentSkill in beginner)
-                    {
-                        <dt>@currentSkill</dt>
-                    }
-                </dl>
-            </div>
-        </p>
     </div>
 </div>
 <br />
