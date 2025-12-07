@@ -7,8 +7,86 @@
     </div>
 
 </header>
+
 <body>
     <div>
+        <div class="row slide-in-from-bottom-light">
+            <!-- Card HTML -->
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id09').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("nci.png")" alt="NCI Field Report logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>NCI Field Report</b></h4>
+                        <p>A report management website for Field Scouts. (Next.js)</p>
+                        <p style="font-size: 12px">2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal HTML -->
+            <div id="id09" class="modal" onclick="document.getElementById('id09').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/nci-field-report"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id09').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Card HTML -->
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id08').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("cropcache.png")" alt="CropCache logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>CropCache</b></h4>
+                        <p>A crop inventory management website for Farmers. Syncs with SnapScale. (Next.js)</p>
+                        <p style="font-size: 12px">2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal HTML -->
+            <div id="id08" class="modal" onclick="document.getElementById('id08').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/cropcache"
+                            style=" width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id08').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Card HTML -->
+            <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id07').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("snapscale.png")" alt="SnapScale logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>SnapScale</b></h4>
+                        <p>Turn scale tickets into Excel reports in a snap (Next.js)</p>
+                        <p style="font-size: 12px">2023</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal HTML -->
+            <div id="id07" class="modal" onclick="document.getElementById('id07').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/snapscale"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id06').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         <div class="row slide-in-from-bottom-light">
             <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
@@ -27,9 +105,11 @@
             <!-- Modal HTML -->
             <div id="id06" class="modal" onclick="document.getElementById('id06').style.display='none'">
                 <form class="modal-content notion animate">
-                    <div class="fappy_container">
-                        <iframe loading="lazy" src="https://v3.kalenwallin.com/i-rewrote-my-first-portfolio-in-astro" style="width: 100%; height: 95%;" />
-                        <button class="btn-block" type="button" onclick="document.getElementById('id06').style.display='none'">Done</button>
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/i-rewrote-my-first-portfolio-in-astro"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id06').style.display='none'">Done</button>
                     </div>
                 </form>
             </div>
@@ -37,7 +117,8 @@
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id01').style.display='block'">
                     <div class="img-container">
-                        <img src="@AppData.GetImageLink("portfoliov3.png")" alt="A graphic of a white k with rounded edges on a solid purple background">
+                        <img src="@AppData.GetImageLink("portfoliov3.png")"
+                            alt="A graphic of a white k with rounded edges on a solid purple background">
                     </div>
                     <div class="container">
                         <h4><b>Portfolio.v3</b></h4>
@@ -50,9 +131,11 @@
             <!-- Modal HTML -->
             <div id="id01" class="modal" onclick="document.getElementById('id01').style.display='none'">
                 <form class="modal-content notion animate">
-                    <div class="fappy_container">
-                        <iframe loading="lazy" src="https://v3.kalenwallin.com/portfoliov3-development" style="width: 100%; height: 95%;" />
-                        <button class="btn-block" type="button" onclick="document.getElementById('id01').style.display='none'">Done</button>
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/portfoliov3-development"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id01').style.display='none'">Done</button>
                     </div>
                 </form>
             </div>
@@ -73,9 +156,11 @@
             <!-- Modal HTML -->
             <div id="id02" class="modal" onclick="document.getElementById('id02').style.display='none'">
                 <form class="modal-content notion animate">
-                    <div class="fappy_container">
-                        <iframe loading="lazy" src="https://v3.kalenwallin.com/portfoliov2" style="width: 100%; height: 95%;" />
-                        <button class="btn-block" type="button" onclick="document.getElementById('id02').style.display='none'">Done</button>
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/portfoliov2"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id02').style.display='none'">Done</button>
                     </div>
                 </form>
             </div>
@@ -98,9 +183,11 @@
             <!-- Modal HTML -->
             <div id="id03" class="modal" onclick="document.getElementById('id03').style.display='none'">
                 <form class="modal-content notion animate">
-                    <div class="fappy_container">
-                        <iframe loading="lazy" src="https://v3.kalenwallin.com/portfoliov1" style="width: 100%; height: 95%;" />
-                        <button class="btn-block" type="button" onclick="document.getElementById('id03').style.display='none'">Done</button>
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/portfoliov1"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id03').style.display='none'">Done</button>
                     </div>
                 </form>
             </div>
@@ -121,9 +208,11 @@
             <!-- Modal HTML -->
             <div id="id04" class="modal" onclick="document.getElementById('id04').style.display='none'">
                 <form class="modal-content notion animate">
-                    <div class="fappy_container">
-                        <iframe loading="lazy" src="https://v3.kalenwallin.com/voting-system" style="width: 100%; height: 95%;" />
-                        <button class="btn-block" type="button" onclick="document.getElementById('id04').style.display='none'">Done</button>
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/voting-system"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id04').style.display='none'">Done</button>
                     </div>
                 </form>
             </div>

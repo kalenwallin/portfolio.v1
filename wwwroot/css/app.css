@@ -616,12 +616,8 @@ dd {
         cursor: pointer;
     }
 
-.fappy_container {
+.iframe_container {
     height: 100%;
-}
-
-.fappy_h1 {
-    margin: 0 auto;
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the three columns stack on top of each other instead of next to each other */
