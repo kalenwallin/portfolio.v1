@@ -13,6 +13,31 @@
         <div class="row slide-in-from-bottom-light">
             <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
+                <div class="card" onclick="document.getElementById('id10').style.display='block'">
+                    <div class="img-container">
+                        <img src="@AppData.GetImageLink("fractionalindexing.png")" alt="Fractional Indexing logo">
+                    </div>
+                    <div class="container">
+                        <h4><b>Fractional Indexing</b></h4>
+                        <p>Real-Time Multiplayer To-do list. (Next.js)</p>
+                        <p style="font-size: 12px">2025</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal HTML -->
+            <div id="id10" class="modal" onclick="document.getElementById('id10').style.display='none'">
+                <form class="modal-content notion animate">
+                    <div class="iframe_container">
+                        <iframe loading="lazy" src="https://v3.kalenwallin.com/sort-fractional-indexing"
+                            style="width: 100%; height: 95%;" />
+                        <button class="btn-block" type="button"
+                            onclick="document.getElementById('id10').style.display='none'">Done</button>
+                    </div>
+                </form>
+            </div>
+            <!-- Card HTML -->
+            <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id09').style.display='block'">
                     <div class="img-container">
                         <img src="@AppData.GetImageLink("nci.png")" alt="NCI Field Report logo">
@@ -61,6 +86,8 @@
                     </div>
                 </form>
             </div>
+        </div>
+        <div class="row slide-in-from-bottom-light">
             <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id07').style.display='block'">
@@ -86,8 +113,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="row slide-in-from-bottom-light">
             <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id06').style.display='block'">
@@ -139,6 +164,8 @@
                     </div>
                 </form>
             </div>
+        </div>
+        <div class="row slide-in-from-bottom-light">
             <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id02').style.display='block'">
@@ -164,8 +191,6 @@
                     </div>
                 </form>
             </div>
-        </div>
-        <div class="row slide-in-from-bottom-light">
             <!-- Card HTML -->
             <div class="column to-slide-bottom-light animate">
                 <div class="card" onclick="document.getElementById('id03').style.display='block'">
